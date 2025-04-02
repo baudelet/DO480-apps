@@ -18,8 +18,10 @@ spec:
         app: budget-app
         name: budget-app
     spec:
+      imagesPullSecrets:
+        - prod-deployer-pull-secret
       containers:
-      - image: IMAGE_NAME
+      - image: registry.apps.ocp4.example.com/finance/budget-app-dev:1.0
         name: budget-app
         ports:
         - containerPort: 8080
