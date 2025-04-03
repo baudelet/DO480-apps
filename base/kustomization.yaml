@@ -1,3 +1,5 @@
+kind: Kustomization
+
 resources:
   - deployment-frontend.yaml
   - deployment.yalk
